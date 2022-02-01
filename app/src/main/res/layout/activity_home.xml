@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        tools:context=".ui.home.HomeActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundColor">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/all_recipe"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_20ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:outlineSpotShadowColor="@color/secondaryColor"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:cardElevation="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <SearchView
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/search_background"
+                        android:iconifiedByDefault="false"
+                        android:queryHint="Search For Recipes"
+                        android:searchIcon="@drawable/ic_search"
+                        android:theme="@style/ThemeOverlay.Search" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/viewCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_110sdp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerEffectRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+
+                        app:spanCount="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+                            <include layout="@layout/shimmer_effect_categoey_items_list" />
+
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/mainCategoryRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                        tools:itemCount="7"
+                        tools:listitem="@layout/main_item_rv" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/category_name"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/_15ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewCategory" />
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerEffectItemsRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+                    app:spanCount="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+                        <include layout="@layout/shimmer_effect_sub_item_list" />
+
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_sub_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/sub_item_rv" />
+
+                <!-- Empty view for the list -->
+                <LinearLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_5sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCategory">
+
+                    <ImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/menu" />
+
+                    <TextView
+                        android:id="@+id/empty_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:paddingTop="8dp"
+                        android:text="@string/there_is_no_selected_item_yet"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/empty_subtitle_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gilroy_light"
+                        android:paddingTop="8dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/please_choose_any_item_from_above_list"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#A2AAB0" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

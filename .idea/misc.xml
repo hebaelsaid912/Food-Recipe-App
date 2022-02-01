@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/ic_search.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/icon_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/icon_outer_bacjground.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/icon_outer_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/icon_shadow_bacjground.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/icon_shadow_bakground.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/indicator_active_page.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/indicator_inactive_page.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/search_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/sub_text_rv_bacjground.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/drawable/view_pager_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/activity_details.xml" value="0.12364130434782608" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/activity_home.xml" value="0.1094224924012158" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/activity_main.xml" value="0.13" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/activity_splash.xml" value="0.13496376811594202" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/details_items_component_list.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/main_item_rv.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/onboarding_item_container.xml" value="0.13179347826086957" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/shimmer_effect_categoey_items_list.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/shimmer_effect_meal_details_items_list.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/shimmer_effect_sub_item_list.xml" value="0.18840579710144928" />
+        <entry key="..\:/Users/SOFT/AndroidStudioProjects/kotlin/FoodRecipe/app/src/main/res/layout/sub_item_rv.xml" value="0.16077898550724637" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

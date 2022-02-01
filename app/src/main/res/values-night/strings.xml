@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_start">Get Start</string>
+    <string name="skip">Skip</string>
+    <string name="all_recipe">All Recipe</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="category_name">Category name</string>
+    <string name="there_aren_t_data_yet">There aren\'t data yet :(</string>
+    <string name="there_is_no_selected_item_yet">There is no selected item yet</string>
+    <string name="please_choose_any_item_from_above_list">Please choose any item from above list</string>
+</resources>
